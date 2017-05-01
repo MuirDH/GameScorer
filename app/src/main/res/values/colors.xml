@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#4A312A</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#2F1D1A</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Background color for the Ascension category -->
+    <color name="category_ascension">#16AFCA</color>
+
+    <!-- Background color for the Caverna category -->
+    <color name="category_caverna">#8800A0</color>
+
+    <!-- Background color for the Zombie Dice category -->
+    <color name="category_zombie_dice">#b70000</color>
+
+    <!-- Background color for the 7 Wonders category -->
+    <color name="category_7Wonders">#FD8E09</color>
+
+    <!-- Text colour for Score Cards -->
+    <color name="score_card_text">#ffffff</color>
+
+    <!-- Color for the middle margin line -->
+    <color name="middle_margin">#000000</color>
+
+</resources>

@@ -1,0 +1,45 @@
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="scrollview_marginbottom">25dp</dimen>
+
+    <!-- Score category heights -->
+    <!-- Caverna -->
+    <dimen name="player_bottom_padding">24dp</dimen>
+    <dimen name="player_top_padding">16dp</dimen>
+    <dimen name="player_score_text_size">56sp</dimen>
+    <dimen name="middle_margin">1dp</dimen>
+    <dimen name="button_top_margin">7dp</dimen>
+
+    <!-- Ascension -->
+    <dimen name="reset_marginTop">7dp</dimen>
+    <dimen name="save_marginbottom">8dp</dimen>
+
+    <!-- Zombie Dice -->
+    <dimen name="brains_textsize">20sp</dimen>
+
+    <dimen name="category_padding">16dp</dimen>
+
+    <dimen name="player_name_textSize">14sp</dimen>
+    <dimen name="player_name_padding">16dp</dimen>
+
+    <dimen name="card_layout_width">0dp</dimen>
+
+    <dimen name="row_name_padding">10dp</dimen>
+    <dimen name="row_name_textsize">14sp</dimen>
+
+    <dimen name="amt_button_width">35dp</dimen>
+    <dimen name="amt_button_height">35dp</dimen>
+
+    <dimen name="final_score_bottom_padding">24dp</dimen>
+    <dimen name="final_score_top_padding">16dp</dimen>
+    <dimen name="final_score_text_size">56sp</dimen>
+
+    <dimen name="middle_margin_top">16dp</dimen>
+
+
+</resources>

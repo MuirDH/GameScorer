@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_7wonders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_7Wonders"
+        tools:context="com.example.android.gamescorer.SevenWondersActivity">
+
+        <!-- Team Layout -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/TeamLayout">
+
+            <!-- Player 1 Scorecard-->
+            <LinearLayout style="@style/ScoreCardLayout">
+
+                <!-- Player 1 Name -->
+                <EditText
+                    android:id="@+id/player1"
+                    style="@style/PlayerName"
+                    android:hint="@string/player_1" />
+
+                <!-- Scoring Categories Row 1 -->
+                <TextView
+                    android:id="@+id/militaryConflicts"
+                    style="@style/RowName"
+                    android:text="@string/row_military" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1MilitaryPointP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r1"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1MilitaryPointP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 2 -->
+                <TextView
+                    android:id="@+id/treasuryContents"
+                    style="@style/RowName"
+                    android:text="@string/row_treasury" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1TreasuryPointP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r2"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1TreasuryPointP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 3 -->
+                <TextView
+                    android:id="@+id/wonders"
+                    style="@style/RowName"
+                    android:text="@string/row_wonders" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1WonderPointP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r3"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1WonderPointP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 4 -->
+                <TextView
+                    android:id="@+id/civilianStructures"
+                    style="@style/RowName"
+                    android:text="@string/row_civilian" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1CivilianPointP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r4"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1CivilianPointP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Rows 5 and 6-->
+                <TextView
+                    android:id="@+id/scientificStructures"
+                    style="@style/RowName"
+                    android:text="@string/row_scientific" />
+
+                <TextView
+                    android:id="@+id/identicalSymbols"
+                    style="@style/RowName"
+                    android:text="@string/subrow_identical_symbols" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="giveSquaredIdenticalPointsP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r5"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="takeSquaredIdenticalPointsP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/differentSymbols"
+                    style="@style/RowName"
+                    android:text="@string/subrow_different_symbols" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give7DifferentPointsP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r6"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take7DifferentPointsP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 7 -->
+                <TextView
+                    android:id="@+id/commercialStructures"
+                    style="@style/RowName"
+                    android:text="@string/row_commercial" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1CommercialPointP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r7"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1CommercialPointP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 8 -->
+                <TextView
+                    android:id="@+id/guilds"
+                    style="@style/RowName"
+                    android:text="@string/row_guilds" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1GuildPointP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r8"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1GuildPointP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Total score for player 1 -->
+                <TextView
+                    android:id="@+id/player_1_score"
+                    style="@style/FinalScoreText" />
+
+            </LinearLayout>
+
+            <View style="@style/MiddleMargin" />
+
+            <!-- Player 2 Scorecard-->
+            <LinearLayout style="@style/ScoreCardLayout">
+
+                <!-- Player 2 Name -->
+                <EditText
+                    android:id="@+id/player2"
+                    style="@style/PlayerName"
+                    android:hint="@string/player_2" />
+
+                <!-- Scoring Categories Row 1 -->
+                <TextView
+                    android:id="@+id/militaryConflicts2"
+                    style="@style/RowName"
+                    android:text="@string/row_military" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1MilitaryPointP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r1"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1MilitaryPointP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 2 -->
+                <TextView
+                    android:id="@+id/treasuryContents2"
+                    style="@style/RowName"
+                    android:text="@string/row_treasury" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1TreasuryPointP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r2"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1TreasuryPointP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 3 -->
+                <TextView
+                    android:id="@+id/wonders2"
+                    style="@style/RowName"
+                    android:text="@string/row_wonders" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1WonderPointP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r3"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1WonderPointP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 4 -->
+                <TextView
+                    android:id="@+id/civilianStructures2"
+                    style="@style/RowName"
+                    android:text="@string/row_civilian" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1CivilianPointP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r4"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1CivilianPointP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Rows 5 and 6-->
+                <TextView
+                    android:id="@+id/scientificStructures2"
+                    style="@style/RowName"
+                    android:text="@string/row_scientific" />
+
+                <TextView
+                    android:id="@+id/identicalSymbols2"
+                    style="@style/RowName"
+                    android:text="@string/subrow_identical_symbols" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="giveSquaredIdenticalPointsP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r5"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="takeSquaredIdenticalPointsP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/differentSymbols2"
+                    style="@style/RowName"
+                    android:text="@string/subrow_different_symbols" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give7DifferentPointsP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r6"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take7DifferentPointsP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 7 -->
+                <TextView
+                    android:id="@+id/commercialStructures2"
+                    style="@style/RowName"
+                    android:text="@string/row_commercial" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1CommercialPointP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r7"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1CommercialPointP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Row 8 -->
+                <TextView
+                    android:id="@+id/guilds2"
+                    style="@style/RowName"
+                    android:text="@string/row_guilds" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1GuildPointP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r8"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1GuildPointP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Total score for player 2 -->
+                <TextView
+                    android:id="@+id/player_2_score"
+                    style="@style/FinalScoreText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/ResetSaveButtons"
+            android:layout_alignLeft="@+id/save_button"
+            android:layout_alignStart="@+id/save_button"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:onClick="resetPlayerScores"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/ResetSaveButtons"
+            android:layout_below="@+id/reset_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:onClick="savePlayerData"
+            android:text="@string/save" />
+
+        <!-- for testing purposes. Remove before finalisation -->
+        <TextView
+            android:id="@+id/text_view_7wonders"
+            style="@style/TestTextView" />
+
+    </RelativeLayout>
+
+</ScrollView>

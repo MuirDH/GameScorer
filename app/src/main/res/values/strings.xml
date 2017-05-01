@@ -1,0 +1,60 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">GameScorer</string>
+
+    <!-- Category name for the score card for 7 Wonders [CHAR LIMIT=20] -->
+    <string name="category_7Wonders">7 Wonders</string>
+
+    <!-- Category name for the score card for Zombie Dice [CHAR LIMIT=20] -->
+    <string name="category_zombieDice">Zombie Dice</string>
+
+    <!-- Category name for the score card for Ascension [CHAR LIMIT=20] -->
+    <string name="category_ascension">Ascension</string>
+
+    <!-- Category name for the score card for Caverna [CHAR LIMIT=20] -->
+    <string name="category_caverna">Caverna</string>
+
+    <!-- strings for player place holder texts -->
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+
+    <!-- Row names for Ascension -->
+    <string name="row_white">White Honour</string>
+    <string name="row_red">Red Honour</string>
+    <string name="row_cards">Card Honour</string>
+
+    <!-- Row names for Caverna -->
+    <string name="farm_animal_dog">Per Farm animal and Dog; -2 for each missing</string>
+    <string name="per_grain">Per Grain</string>
+    <string name="per_vegetable">Per Vegetable</string>
+    <string name="per_ruby">Per Ruby</string>
+    <string name="per_dwarf">Per Dwarf</string>
+    <string name="unused_space">-1 for each unused space</string>
+    <string name="furnishing_tiles_pastures_mines">Furnishing tiles, Pastures, Mines</string>
+    <string name="bonus_for_parlors_storages_and_chambers">Bonus for Parlors, Storages, and Chambers</string>
+    <string name="gold_coins_and_begging_markers">Gold coins and Begging markers</string>
+
+    <!-- Row names for Zombie Dice -->
+    <string name="row_brains">Brains</string>
+
+    <!-- Plus/Minus buttons -->
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="_0">0</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+
+    <!-- Row names for 7 Wonders -->
+    <string name="row_military">Military Conflicts</string>
+    <string name="row_treasury">Treasury Contents (# of groups of 3 coins)</string>
+    <string name="row_wonders">Wonders</string>
+    <string name="row_civilian">Civilian Structures</string>
+    <string name="row_scientific">Scientific Structures</string>
+    <string name="subrow_identical_symbols"># of Sets of Identical Symbols</string>
+    <string name="subrow_different_symbols"># of Sets of 3 Different Symbols</string>
+    <string name="row_commercial">Commercial Structures</string>
+    <string name="row_guilds">Guilds</string>
+
+
+</resources>
+

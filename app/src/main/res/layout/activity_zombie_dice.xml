@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_zombieDice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_zombie_dice"
+        tools:context="com.example.android.gamescorer.ZombieDiceActivity">
+
+
+        <!-- Team Layout -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/TeamLayout">
+
+            <!-- Player 1 Scorecard-->
+            <LinearLayout style="@style/ScoreCardLayout">
+
+                <!-- Player 1 Name -->
+                <EditText
+                    android:id="@+id/player1"
+                    style="@style/PlayerName"
+                    android:hint="@string/player_1" />
+
+                <!-- Scoring Categories Row 1 -->
+                <TextView
+                    android:id="@+id/brains"
+                    style="@style/RowName"
+                    android:text="@string/row_brains"
+                    android:textSize="@dimen/brains_textsize" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1BrainP1"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p1_r1"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1BrainP1"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Total score for player 1 -->
+                <TextView
+                    android:id="@+id/player_1_score"
+                    style="@style/FinalScoreText" />
+
+            </LinearLayout>
+
+            <View style="@style/MiddleMargin" />
+
+            <!-- Player 2 Scorecard-->
+            <LinearLayout style="@style/ScoreCardLayout">
+
+                <!-- Player 2 Name -->
+                <EditText
+                    android:id="@+id/player2"
+                    style="@style/PlayerName"
+                    android:hint="@string/player_2" />
+
+                <!-- Scoring Categories Row 1 -->
+                <TextView
+                    android:id="@+id/brains2"
+                    style="@style/RowName"
+                    android:text="@string/row_brains"
+                    android:textSize="@dimen/brains_textsize" />
+
+                <LinearLayout style="@style/RowLayout">
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="give1BrainP2"
+                        android:text="@string/add" />
+
+                    <TextView
+                        android:id="@+id/p2_r1"
+                        style="@style/ScoreText" />
+
+                    <Button
+                        style="@style/AmtButton"
+                        android:onClick="take1BrainP2"
+                        android:text="@string/subtract" />
+
+                </LinearLayout>
+
+                <!-- Total score for player 2 -->
+                <TextView
+                    android:id="@+id/player_2_score"
+                    style="@style/FinalScoreText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/ResetSaveButtons"
+            android:layout_alignLeft="@+id/save_button"
+            android:layout_alignStart="@+id/save_button"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:onClick="resetPlayerScores"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/ResetSaveButtons"
+            android:layout_above="@+id/text_view_zombie_dice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/save_marginbottom"
+            android:onClick="savePlayerData"
+            android:text="@string/save" />
+
+        <!-- for testing purposes. Remove before finalisation -->
+        <TextView
+            android:id="@+id/text_view_zombie_dice"
+            style="@style/TestTextView" />
+
+    </RelativeLayout>
+</ScrollView>

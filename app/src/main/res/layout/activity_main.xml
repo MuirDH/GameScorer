@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.android.gamescorer.MainActivity">
+
+    <!-- Main Menu for the app. -->
+    <TextView
+        android:id="@+id/ascension"
+        style="@style/CategoryStyle"
+        android:background="@color/category_ascension"
+        android:drawableEnd="@drawable/ascension"
+        android:drawableRight="@drawable/ascension"
+        android:text="@string/category_ascension" />
+
+
+    <TextView
+        android:id="@+id/caverna"
+        style="@style/CategoryStyle"
+        android:background="@color/category_caverna"
+        android:drawableEnd="@drawable/caverna"
+        android:drawableRight="@drawable/caverna"
+        android:text="@string/category_caverna" />
+
+
+    <TextView
+        android:id="@+id/zombieDice"
+        style="@style/CategoryStyle"
+        android:background="@color/category_zombie_dice"
+        android:drawableEnd="@drawable/zombiedice"
+        android:drawableRight="@drawable/zombiedice"
+        android:text="@string/category_zombieDice" />
+
+
+    <TextView
+        android:id="@+id/_7Wonders"
+        style="@style/CategoryStyle"
+        android:background="@color/category_7Wonders"
+        android:drawableEnd="@drawable/sevenwonders"
+        android:drawableRight="@drawable/sevenwonders"
+        android:text="@string/category_7Wonders" />
+
+
+</LinearLayout>

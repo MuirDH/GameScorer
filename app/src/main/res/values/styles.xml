@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <!-- Style for a category of games -->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/category_padding</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for the Player Name text -->
+    <style name="PlayerName">
+        <item name="android:textColorHint">@color/score_card_text</item>
+        <item name="android:textSize">@dimen/player_name_textSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/player_name_padding</item>
+        <item name="android:inputType">textPersonName|textCapWords</item>
+        <item name="android:ems">8</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <!-- Style for ScoreCard layout -->
+    <style name="ScoreCardLayout">
+        <item name="android:layout_width">@dimen/card_layout_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for Scorecard Row layouts -->
+    <style name="RowLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for Row Name -->
+    <style name="RowName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/score_card_text</item>
+        <item name="android:padding">@dimen/row_name_padding</item>
+        <item name="android:textSize">@dimen/row_name_textsize</item>
+    </style>
+
+    <!-- Style for +/- buttons -->
+    <style name="AmtButton">
+        <item name="android:layout_width">@dimen/amt_button_width</item>
+        <item name="android:layout_height">@dimen/amt_button_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- Style for Score Field Text -->
+    <style name="ScoreText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@color/score_card_text</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Style for Final Score Text -->
+    <style name="FinalScoreText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans_serif_light</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/final_score_bottom_padding</item>
+        <item name="android:paddingTop">@dimen/final_score_top_padding</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/final_score_text_size</item>
+    </style>
+
+    <!-- Style for Reset and Save Buttons -->
+    <style name="ResetSaveButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Style for the Team Layout -->
+    <style name="TeamLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the Margin line which divides the Score Card -->
+    <style name="MiddleMargin">
+        <item name="android:layout_width">@dimen/middle_margin</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/middle_margin_top</item>
+        <item name="android:background">@color/middle_margin</item>
+    </style>
+
+    <!-- Style for the Test Text -->
+    <style name="TestTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+</resources>
