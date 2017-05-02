@@ -90,6 +90,9 @@ public class GameDbHelper extends SQLiteOpenHelper {
             case ZombieDice:
                 db.execSQL(SQL_CREATE_ZOMBIEDICE_TABLE);
                 break;
+            case SevenWonders:
+                db.execSQL(SQL_CREATE_SEVENWONDERS_TABLE);
+                break;
 
             default:
                 throw new IllegalArgumentException(" Create table not implemented for this game ");
